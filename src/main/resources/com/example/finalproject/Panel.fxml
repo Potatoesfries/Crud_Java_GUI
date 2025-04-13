@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.geometry.Insets?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1000.0" style="-fx-background-color: #f0f0f0;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.example.finalproject.Controller.PanelController">
+   <left>
+      <Pane prefHeight="700.0" prefWidth="250.0" style="-fx-background-color: #2c3e50;" BorderPane.alignment="CENTER">
+         <children>
+            <Label alignment="CENTER" layoutY="30.0" prefHeight="60.0" prefWidth="250.0" text="Library" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="32.0" />
+               </font>
+            </Label>
+            <VBox layoutY="120.0" prefHeight="400.0" prefWidth="250.0" spacing="15.0">
+               <children>
+                  <Button fx:id="HomeBtn" alignment="CENTER_LEFT" graphicTextGap="15.0" mnemonicParsing="false" onAction="#goHomePanel" prefHeight="60.0" prefWidth="250.0" style="-fx-background-color: #3498db; -fx-text-fill: white; -fx-font-size: 16px; -fx-font-weight: bold;" text="   Home">
+                     <effect>
+                        <DropShadow color="#00000066" />
+                     </effect>
+                  </Button>
+                  <Button fx:id="ManageBtn" alignment="CENTER_LEFT" graphicTextGap="15.0" mnemonicParsing="false" onAction="#goManagePanel" prefHeight="60.0" prefWidth="250.0" style="-fx-background-color: #34495e; -fx-text-fill: white; -fx-font-size: 16px; -fx-font-weight: bold;" text="   Manage">
+                     <effect>
+                        <DropShadow color="#00000066" />
+                     </effect>
+                  </Button>
+               </children>
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+            </VBox>
+            <Button fx:id="logoutBtn" alignment="CENTER" layoutX="75.0" layoutY="620.0" mnemonicParsing="false" onAction="#handleLogout" prefHeight="40.0" prefWidth="100.0" style="-fx-background-color: #e74c3c; -fx-text-fill: white; -fx-font-weight: bold;" text="Logout" />
+         </children>
+      </Pane>
+   </left>
+   <center>
+      <AnchorPane prefHeight="700.0" prefWidth="750.0" style="-fx-background-color: white;" BorderPane.alignment="CENTER">
+         <children>
+            <StackPane fx:id="contentArea" prefHeight="700.0" prefWidth="750.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+         </children>
+         <effect>
+            <DropShadow color="#0000001a" />
+         </effect>
+      </AnchorPane>
+   </center>
+</BorderPane>

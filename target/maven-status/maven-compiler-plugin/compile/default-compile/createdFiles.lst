@@ -1,0 +1,15 @@
+com/example/finalproject/Controller/BookManageController.class
+com/example/finalproject/Controller/BookDetailsController.class
+com/example/finalproject/Controller/RegisterController.class
+com/example/finalproject/Model/UserDao.class
+com/example/finalproject/Controller/LoginController.class
+com/example/finalproject/Model/BookDao.class
+com/example/finalproject/Controller/BookViewController.class
+com/example/finalproject/MySQL/DatabaseConnection.class
+com/example/finalproject/App.class
+com/example/finalproject/Controller/BookDialogController.class
+module-info.class
+com/example/finalproject/Model/Book.class
+com/example/finalproject/Model/User.class
+com/example/finalproject/Controller/PanelController.class
+com/example/finalproject/Controller/AuthController.class
